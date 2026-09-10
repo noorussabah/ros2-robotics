@@ -25,6 +25,9 @@ setup(
     entry_points={
         'console_scripts': [            'battery_publisher = robot_basics.battery_publisher:main',
             'battery_monitor = robot_basics.battery_monitor:main',
+'calculator_server = robot_basics.calculator_server:main',
+'calculator_client = robot_basics.calculator_client:main',
+'square_driver = robot_basics.square_driver:main',
         ],
     },
 )

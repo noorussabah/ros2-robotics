@@ -81,5 +81,15 @@ def generate_launch_description():
             ],
             output='screen'
         ),
-
+	# Bridge Gazebo /scan to ROS 2 /scan
+	ExecuteProcess(
+	    cmd=[
+	        'ros2',
+	        'run',
+	        'ros_gz_bridge',
+	        'parameter_bridge',
+	        '/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan'
+	    ],
+	    output='screen'
+	),
     ])

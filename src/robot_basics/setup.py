@@ -28,6 +28,7 @@ setup(
 'calculator_server = robot_basics.calculator_server:main',
 'calculator_client = robot_basics.calculator_client:main',
 'square_driver = robot_basics.square_driver:main',
+'lidar_monitor = robot_basics.lidar_monitor:main',
         ],
     },
 )
